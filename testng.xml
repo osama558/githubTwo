@@ -13,7 +13,7 @@
         <classes>
             <!-- Specifies the classes that should be included in this test -->
         <!--    <class name="TuwaiqWebApplication.HomePageTest"> -->
-                <class name="githubTwoTest">
+                <class name="GithubWeb.GithubTest">
                 <!-- Specifies the fully qualified class name "TuwaiqWebApplication.HomePageTest"
                      which contains the test methods to be executed. -->
             </class>
