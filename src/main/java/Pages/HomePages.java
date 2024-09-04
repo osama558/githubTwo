@@ -42,19 +42,6 @@ public class HomePages {
         WebElement pl = driver.findElement(docsLink);
         pl.click();
 
-//        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-//        String currentURL = driver.getCurrentUrl();
-//        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-//        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-//        String currentURL2 = driver.getCurrentUrl();
-//        String currentURL3 = driver.getCurrentUrl();
-//        //String j = getDriver().getCurrentUrl();
-//        System.out.println(currentURL);
-//        System.out.println(currentURL2);
-//        System.out.println(currentURL3);
-
-
-        //driver;
 
     }
 

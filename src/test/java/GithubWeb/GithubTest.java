@@ -18,17 +18,24 @@ public class GithubTest extends BaseClass {
     @Test
     public void loginPagesMethod() {
         LoginPages loginPages = new LoginPages(driver);
+
         loginPages.openUrl();
+
         loginPages.usernameField();
+
         loginPages.passwordField();
+
         loginPages.loinBtn();
-        //Thread.sleep((5000));
+
     }
 
     @AfterMethod
     public void forgetPasswordTest() {
+
         LoginPages loginPages = new LoginPages(driver);
+
         loginPages.openUrl();
+
         loginPages.forgetPass();
         
 
