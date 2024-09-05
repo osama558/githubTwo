@@ -58,7 +58,12 @@ public class GithubTest extends BaseClass {
     }
 
     @Test
-
+    @Epic("Forget Password")
+    @Feature("forget password form")
+    @Story("User enter wrong data")
+    @Owner("Osama Alghamdi")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Testing sending feedbacks")
     public void assertionFunction() {
         LoginPages assertFunction = new LoginPages(driver);
         assertFunction.openUrl();
@@ -69,6 +74,12 @@ public class GithubTest extends BaseClass {
     }
 
     @Test
+    @Epic("Forget Password")
+    @Feature("forget password form")
+    @Story("User enter wrong data")
+    @Owner("Osama Alghamdi")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Testing sending feedbacks")
     public void assertionForgetFunction() {
         WebDriver driver1 = new ChromeDriver();
         driver1.manage().window().maximize();
@@ -91,6 +102,12 @@ public class GithubTest extends BaseClass {
         //System.out.println(ExpectedTitle + " " + ActualTitle);
     }
     @Test
+    @Epic("Forget Password")
+    @Feature("forget password form")
+    @Story("User enter wrong data")
+    @Owner("Osama Alghamdi")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Testing sending feedbacks")
     public void assertionSearchFunction() {
 
         SearchPages SearchObj = new SearchPages(driver);
