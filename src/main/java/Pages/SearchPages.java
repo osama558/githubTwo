@@ -22,7 +22,7 @@ public class SearchPages{
         WebElement searchInput = driver.findElement(searchBtn);
         searchInput.sendKeys("bshrAhmed");
         searchInput.sendKeys(Keys.RETURN);
-
+//
     }
     public void openUsersUrl(){
         WebElement clickUsers = driver.findElement(usersLeft);
