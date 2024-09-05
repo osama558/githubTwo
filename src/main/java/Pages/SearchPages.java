@@ -17,7 +17,8 @@ public class SearchPages{
 
     public void openUrl(){driver.get("https://github.com/search");
         }
-
+ //
+    
     public void SearchInput(){
         WebElement searchInput = driver.findElement(searchBtn);
         searchInput.sendKeys("bshrAhmed");
