@@ -3,6 +3,7 @@ package GithubWeb;
 import Base.BaseClass;
 import Pages.LoginPages;
 import Pages.SearchPages;
+import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +16,14 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class GithubTest extends BaseClass {
 
+    //@Test
     @Test
+    @Epic("Login Page")
+    @Feature("Login form")
+    @Story("User enter wrong data")
+    @Owner("Osama Alghamdi")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Testing sending feedbacks")
     public void loginPagesMethod() {
         LoginPages loginPages = new LoginPages(driver);
 
@@ -30,6 +38,13 @@ public class GithubTest extends BaseClass {
     }
 
     @AfterMethod
+    //@Test
+    @Epic("Forget Password")
+    @Feature("forget password form")
+    @Story("User enter wrong data")
+    @Owner("Osama Alghamdi")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Testing sending feedbacks")
     public void forgetPasswordTest() {
 
         LoginPages loginPages = new LoginPages(driver);
@@ -43,6 +58,7 @@ public class GithubTest extends BaseClass {
     }
 
     @Test
+
     public void assertionFunction() {
         LoginPages assertFunction = new LoginPages(driver);
         assertFunction.openUrl();

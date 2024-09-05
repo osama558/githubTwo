@@ -2,6 +2,7 @@ package GithubWeb;
 
 import Base.BaseClass;
 import Pages.HomePages;
+import io.qameta.allure.*;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -11,7 +12,15 @@ import static org.testng.AssertJUnit.assertEquals;
 
 public class GithubHomePagesTest extends BaseClass {
 
+    //@Test
+    //@Description("This test homePagesMethod at this test does not test 2-Factor Authentication.")
     @Test
+    @Epic("Home Page")
+    @Feature("Docs form")
+    @Story("User send feedback")
+    @Owner("Osama Alghamdi")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Testing sending feedbacks")
     public void homePagesMethod() throws InterruptedException {
         HomePages d = new HomePages(driver);
         d.openUrl();
